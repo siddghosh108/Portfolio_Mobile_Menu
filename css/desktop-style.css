@@ -65,13 +65,14 @@
   }
 
   .hero-intro-description {
-    width: 110%;
+    width: 100%;
     font-size: 20px;
     line-height: 28px;
   }
 
   .hero-intro {
     background-image: none;
+    overflow-x: hidden;
   }
 
   /* Work Section */

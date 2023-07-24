@@ -8,10 +8,12 @@
   box-sizing: border-box;
 }
 
-body {
+body,html {
   background: #f7f7f9;
   height: auto;
   z-index: 0;
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 /* .hidden {
@@ -74,14 +76,29 @@ header {
   list-style-type: none;
 }
 
+.no-scroll {
+  overflow-x: hidden;
+}
+
+
 .hero-intro {
-  width: 100%;
+  max-width: 100%;
   height: auto;
   background-image: url("../Assets/header-shapes\ mobile.svg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-position: center;
+  background-size: contain;
   display: flex;
   justify-content: center;
+
+}
+
+@media (max-width: 769px) {
+  .hero-intro {
+    background-size: cover;
+    width: 100vw;
+    overflow-x: hidden;
+  }
 }
 
 .hero-intro-container {
