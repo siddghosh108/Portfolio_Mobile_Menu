@@ -87,7 +87,8 @@ header {
   background-image: url("../Assets/header-shapes\ mobile.svg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: 100%;
+  background-position: right 0 top 40px;
   display: flex;
   justify-content: center;
 }
